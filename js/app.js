@@ -34,11 +34,7 @@ Image.prototype.render = function () {
 // Read the json file
 
 Image.readJson = () => {
-  const ajaxSettings = {
-    method: 'get',
-    datatype: 'json'
-  };
-  $.ajax('../data/page-1.json', ajaxSettings)
+  $.ajax('../data/page-1.json')
     .then(data => {
       data.forEach(item => {
         let image = new Image(item);
