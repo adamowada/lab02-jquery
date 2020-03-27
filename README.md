@@ -9,9 +9,9 @@ Estimate of time needed to complete: 2hrs
 
 Start time: 7:33pm
 
-Finish time: _____
+Finish time: 8:25pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 52min
 ```
 
 #### Why are we implementing this feature?
@@ -36,9 +36,9 @@ Then the photo gallery should display all of the images in the gallery
 ```
 Number and name of feature: Feature #2: Filter images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2hrs
 
-Start time: _____
+Start time: 8:37pm
 
 Finish time: _____
 
