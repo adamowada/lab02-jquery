@@ -1,70 +1,9 @@
-# lab02-jquery
-301 - Lab 02: jQuery Selectors and Events
-
 # Lab 02: jQuery Selectors and Events
-
-## Configuration
-
-_Your repository must include the following config files:_
-
-- `README.md` - with an overview of the project for a new visitor to your repo
-- `.gitignore` - with standard NodeJS configurations (see the provided `.gitignore` file)
-- `.eslintrc.json` - with Code 301 course standards for the linter (see the provided file in the *configs* folder of the class repo)
-
-- Organize your files into folders as you see fit. Here is an example file tree:
-
-```sh
-lab-02-repository
-├── css
-│   ├── base.css
-│   ├── layouts.css
-│   ├── modules.css
-│   └── reset.css
-├── data
-│   └── page-1.json
-├── index.html
-├── js
-│    └── app.js
-├── .eslintrc.json
-├── .gitignore
-└── README.md
-```
-
-## User Acceptance Tests
-
-### Overview
-
-In labs 2 and 3, you and your partner(s) will be using the provided JSON files to create a photo gallery. You will style it using floats.
-
-You have the option of using the provided `index.html` file, but it is not a requirement.
-
-## Resources
-
-- [page-1.json](./starter-code/page-1.json)
-- [index.html](./starter-code/index.html)
-
-### Time Estimate
-
-For each of the features listed below, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
-
-```
-Number and name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
-```
-
-Add this information to your README.
 
 ### Feature #1: Display images
 
 ```
-Number and name of feature: ________________________________
+Number and name of feature: Feature #1: Display images
 
 Estimate of time needed to complete: _____
 
@@ -91,7 +30,20 @@ Then the photo gallery should display all of the images in the gallery
 - Each object should become a new instance of a constructor function. Refer to the data to determine the necessary properties.
 - Use jQuery to make a copy of the HTML template of the photo component. For each object, fill in the duplicated template with its properties, then append the copy to the DOM.
 
+
 ### Feature #2: Filter images
+
+```
+Number and name of feature: Feature #2: Filter images
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+```
 
 #### Why are we implementing this feature?
 
@@ -108,7 +60,20 @@ Then only the images whose keyword matches the option should be displayed
 - Create a `<select>` element which contains unique `<option>` elements extracted dynamically from the JSON file, one for each keyword.
 - Use an event handler to respond when the user chooses an option from the select menu. Hide all of the images, then show those whose keyword matches the option chosen.
 
+
 ### Feature #3: Style the application
+
+```
+Number and name of feature: Feature #3: Style the application
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+```
 
 #### Why are we implementing this feature?
 
@@ -125,7 +90,20 @@ Then the images should be displayed in rows across the screen
 - Style your application using floats.
 - Utilize at least one Google font.
 
+
 ### Stretch Goal: Sort the images
+
+```
+Number and name of feature: Sort the images
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+```
 
 #### Why are we implementing this feature?
 
@@ -142,11 +120,3 @@ Then the images should be sorted accordingly
 - Add the ability for the user to sort the images by either title or by number of horns.
 - Sort the images by one of the properties on page load. This should also apply to the second page of images.
 
-## Submission Instructions
-
-- Complete your Feature Tasks for the day
-- Create a Pull Request (PR) back to the `master` branch of your repository
-- On Canvas, submit a link to your PR and a link to your deployed application on GitHub pages. Add a comment in your Canvas assignment which includes the following:
-  - A question within the context of today's lab assignment
-  - An observation about the lab assignment, or related 'Ah-hah!' moment
-  - How long you spent working on this assignment
