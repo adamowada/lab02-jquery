@@ -5,9 +5,9 @@
 ```
 Number and name of feature: Feature #1: Display images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2hrs
 
-Start time: _____
+Start time: 7:33pm
 
 Finish time: _____
 
@@ -120,3 +120,6 @@ Then the images should be sorted accordingly
 - Add the ability for the user to sort the images by either title or by number of horns.
 - Sort the images by one of the properties on page load. This should also apply to the second page of images.
 
+## Sources:
+
+Class 02 demo code
