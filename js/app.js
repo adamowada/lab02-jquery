@@ -1,5 +1,7 @@
 'use strict';
 
+const dropDownArr = [];
+
 function Image(image) {
   this.url = image.image_url;
   this.title = image.title;
@@ -31,17 +33,55 @@ Image.prototype.render = function () {
 };
 
 
-// Read the json file
-
+// Read the json file, renders image, adds unqiue keywords to arr, appends to drop down menu
 Image.readJson = () => {
   $.ajax('../data/page-1.json')
     .then(data => {
       data.forEach(item => {
         let image = new Image(item);
-        console.log(image);
+        checkIfUnique(image.keyword);
         image.render();
       });
+      populateDropDownMenu();
     });
 };
 
 $(() => Image.readJson());
+
+
+// Event listener to drop down menu
+$('#dropItems').click(filterImages);
+
+// on click function that shows clicked classes and hides not clicked classes
+function filterImages() {
+  if ($(this).val() === 'default') {
+    return;
+  } else {
+    for (let i = 0; i < dropDownArr.length; i++) {
+      if (dropDownArr[i] !== $(this).val()) {
+        $(`.${dropDownArr[i]}`).hide();
+      } else {
+        $(`.${dropDownArr[i]}`).show();
+      }
+    }
+  }
+}
+
+// populates dropDownArr with unique keywords
+function checkIfUnique(keyword) {
+  for (let i = 0; i < dropDownArr.length; i++) {
+    if (dropDownArr[i] === keyword) {
+      return;
+    }
+  }
+  dropDownArr.push(keyword);
+}
+
+// appends drop down menu with dropDownArr
+function populateDropDownMenu() {
+  dropDownArr.forEach( keyword => {
+    $('#dropItems').append(`<option value="${keyword}">${keyword}</option>`);
+  });
+}
+
+

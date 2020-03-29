@@ -123,3 +123,6 @@ Then the images should be sorted accordingly
 ## Sources:
 
 Class 02 demo code
+
+Use jQuery .val() - https://www.tutorialrepublic.com/faq/how-to-get-the-value-in-an-input-text-box-using-jquery.php
+
