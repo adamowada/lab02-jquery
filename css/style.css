@@ -1,3 +1,14 @@
 @import 'base.css';
 @import 'layouts.css';
 @import 'modules.css';
+
+
+
+
+section {
+  float: left;
+}
+
+footer {
+  display: inline;
+}
