@@ -38,6 +38,7 @@ Image.readJson = () => {
   $.ajax('data/page-1.json')
     .then(data => {
       data.forEach(item => {
+        console.log('the item is', item);
         let image = new Image(item);
         checkIfUnique(image.keyword);
         image.render();
