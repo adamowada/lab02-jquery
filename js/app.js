@@ -35,7 +35,7 @@ Image.prototype.render = function () {
 
 // Read the json file, renders image, adds unqiue keywords to arr, appends to drop down menu
 Image.readJson = () => {
-  $.ajax('../../data/page-1.json')
+  $.ajax('data/page-1.json')
     .then(data => {
       data.forEach(item => {
         console.log('the item is', item);
